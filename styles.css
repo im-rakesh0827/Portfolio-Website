@@ -627,7 +627,9 @@ img {
     display: inline-block;
     width: 13px;
     height: 13px;
-    background-color: var(--first-color);
+    /* background-color: var(--first-color); */
+
+    background-color: hsl(145.49, 72.41%, 25.23%);
     border-radius: 50%;
 }
 
