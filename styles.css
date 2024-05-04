@@ -262,7 +262,9 @@ img {
 
 /* Active link */
 .active-link {
-    color: var(--first-color);
+    /* color: var(--first-color); */
+    color: hsl(188, 78%, 32%);
+    
 }
 
 /* Change background header */
@@ -293,12 +295,15 @@ img {
 }
 
 .home__social-icon:hover {
+    /* color: var(--first-color-alt); */
     color: var(--first-color-alt);
 }
 
 .home__blob {
     width: 200px;
-    fill: var(--first-color);
+    /* fill: var(--first-color); */
+    fill: hsl(203.32, 60.64%, 27.08%);
+    
 }
 
 .home__blob-img {
@@ -355,7 +360,8 @@ img {
 /* ================= BUTTONS ====================  */
 .button {
     display: inline-block;
-    background-color: var(--first-color);
+    /* background-color: var(--first-color); */
+    background-color: hsl(250, 55.04%, 18.06%);
     color: #fff;
     padding: 1rem;
     border-radius: .5rem;
@@ -363,7 +369,8 @@ img {
 }
 
 .button:hover {
-    background-color: var(--first-color-alt);
+    /* background-color: var(--first-color-alt); */
+    background-color: hsl(188, 78%, 32%);
 }
 
 .button__icon {
@@ -904,7 +911,8 @@ img {
 }
 
 .footer__bg {
-    background-color: var(--first-color);
+    /* background-color: var(--first-color); */
+    background-color: hsl(203.32, 60.64%, 27.08%);
     padding: 2rem 0 3rem;
 }
 
@@ -955,7 +963,8 @@ img {
     position: fixed;
     right: 1rem;
     bottom: -20%;
-    background-color: var(--first-color);
+    /* background-color: var(--first-color); */
+    background-color: hsl(69.02, 45.99%, 23.98%);
     opacity: .8;
     padding: 0 .3rem;
     border-radius: .4rem;
