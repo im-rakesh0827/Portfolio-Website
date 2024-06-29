@@ -1,4 +1,4 @@
-# My Portfolio
+<!-- # My Portfolio
 
 This portfolio showcases my projects, skills, and provides a way to connect with me.
 
@@ -42,4 +42,4 @@ My portfolio serves as a personal website where I showcase my projects, skills, 
   <img src="./portfolio3.png" alt="addtrains" width="200" height="150">
 
 - Contact Me
-  <img src="./portfolio4.png" alt="addtrains" width="200" height="150">
+  <img src="./portfolio4.png" alt="addtrains" width="200" height="150"> -->
