@@ -417,3 +417,50 @@ span{
 #profileImage:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5)
 }
+
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    /* Position above the icon */
+    left: 50%;
+    margin-left: -50px;
+    /* Center the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    /* Arrow below the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when hovering */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
