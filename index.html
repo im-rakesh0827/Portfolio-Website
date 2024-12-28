@@ -7,6 +7,7 @@
     <title>Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body>
@@ -19,9 +20,6 @@
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
-
-
-
         </nav>
     </header>
 
@@ -36,61 +34,63 @@
             </p>
             <div class="social-media">
                 <a href="https://github.com/im-rakesh0827" class="tooltip" target="_blank">
-                    <i class='bx bxl-github'></i>
+                    <img src="images/github.png" alt="GitHub Icon" style="width: 30px; height: 30px;">
                     <span class="tooltiptext">GitHub</span>
                 </a>
 
                 <a href="https://www.linkedin.com/in/im-rakesh0827/" class="tooltip" target="_blank">
-                    <i class='bx bxl-linkedin-square'></i>
+                    <img src="images/linkedin.png" alt="LinkedIn Icon" style="width: 30px; height: 30px;">
                     <span class="tooltiptext">LinkedIn</span>
                 </a>
 
                 <a href="https://www.instagram.com/im_rakesh0827/" class="tooltip" target="_blank">
-                    <i class='bx bxl-instagram'></i>
+                    <img src="images/instagram.png" alt="Instagram Icon" style="width: 30px; height: 30px;">
                     <span class="tooltiptext">Instagram</span>
                 </a>
-
+                <a href="https://medium.com/@im-rakesh0827" class="tooltip" target="_blank">
+                    <img src="images/medium.png" alt="Medium Icon" style="width: 30px; height: 30px;">
+                    <span class="tooltiptext">Medium</span>
+                </a>
                 <a href="https://fueler.io/im_rakesh0827" class="tooltip" target="_blank">
-                    <i class="bi bxl-medium"></i>
+                    <img src="images/global-network.png" alt="Fueler Icon" style="width: 30px; height: 30px;">
                     <span class="tooltiptext">Fueler</span>
                 </a>
+                <a href="https://hashnode.com/@imrakesh0827" class="tooltip" target="_blank">
+                    <img src="images/network-2.png" alt="Hashnode Icon" style="width: 30px; height: 30px;">
+                    <span class="tooltiptext">Hashnode</span>
+                </a>
                 <a href="https://topmate.io/im_rakesh0827" class="tooltip" target="_blank">
-                    <i class="bx bxl-topmate"></i>
+                    <img src="images/network.png" alt="Topmate Icon" style="width: 30px; height: 30px;">
                     <span class="tooltiptext">Topmate</span>
                 </a>
-
-
-
-
             </div>
             <a href="https://docs.google.com/document/d/1NTVc--xidicPKJguxmb0lHOscecm6MLZ/edit?usp=sharing&ouid=103065912875687167013&rtpof=true&sd=true"
-                class="btn">Download CV
+                class="btn" target="_blank" download
+                style="display: inline-flex; align-items: center; text-decoration: none;">
+                <span style="font-size: 16px; color: inherit; vertical-align: middle;">Download CV</span>
+                <img src="images/download-2.png" alt="Download Icon"
+                    style="width: 30px; height: 30px; margin-left: 10px; vertical-align: middle;">
             </a>
         </div>
         <div class="home-img">
-            <!-- <img src="./img1.jpg" alt=""> -->
+            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_touohxv0.json" background="transparent"
+                speed="0.5" style="width: 400px; height:400px; margin-left: 15em;" loop autoplay>
+            </lottie-player>
         </div>
     </section>
-
     <section class="about" id="about">
         <div class="about-img">
-            <img id="profileImage" src="./img1.jpg" alt="">
+            <img id="profileImage" src="images/img1.jpg" alt="" style="height: 600px; width: auto;">
         </div>
+
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <h3>Software Developer | <a href="https://kavayahsolutions.com"><span>@Kavayah IT Solutions</span></a></h3>
+            <h3>Software Developer | <a href="https://kavayahsolutions.com"><span>@Kavayah IT Solutions Pvt
+                        Ltd</span></a></h3>
             <p style="font-size: 20px;">
-                <!-- Software Developer at Kavayah IT Solutions (Hyderabad) with a strong foundation in coding and a passion
-                for
-                creating efficient and user-friendly software solutions.
-                Excited to contribute to projects that make a meaningful impact.
-                I am eager to apply my skills and knowledge to real-world projects and contribute to the development of
-                innovative
-                technology solutions. -->
                 As a dedicated .NET Software Developer, I am passionate about building robust, scalable, and
                 high-performing
                 applications that solve real-world problems with a strong foundation in C#, ASP.NET, and .NET Core, MVC.
-
                 <br>
                 Key Skills : C#, ASP.NET, ADO.NET, .NET Core, Blazor Framework, HTML, CSS, JavaScript, MSSQL Server,
                 Entity Framework, etc
@@ -102,7 +102,6 @@
             <a href="#" class="btn">Read More</a>
         </div>
     </section>
-
     <section class="skills" id="skills">
         <h2 class="heading">My <span>Skills</span></h2>
         <div class="skills-container">
@@ -112,7 +111,9 @@
                 <ul>
                     <li>C++, C# , Python</li>
                     <li>HTML,CSS,JS</li>
-                    <li>.NET, React.Js</li>
+                    <li>.NET</li>
+                    <li>.NET Core</li>
+                    <li>REST API</li>
                 </ul>
             </div>
             <div class="skills-box">
@@ -141,7 +142,7 @@
         <h2 class="heading">My <span>Projects</span></h2>
         <div class="project-container">
             <div class="project-box">
-                <img src="./img2.jpg" alt="">
+                <img src="images/img2.jpg" alt="">
                 <div class="project-layer">
                     <h4>Book Management System</h4>
                     <p>
@@ -151,7 +152,7 @@
                 </div>
             </div>
             <div class="project-box">
-                <img src="./img6.jpg" alt="">
+                <img src="images/img6.jpg" alt="">
                 <div class="project-layer">
                     <h4>Parking Booking System</h4>
                     <p>
@@ -161,7 +162,7 @@
                 </div>
             </div>
             <div class="project-box">
-                <img src="./img3.jpg" alt="">
+                <img src="images/img3.jpg" alt="">
                 <div class="project-layer">
                     <h4>Music Application / Spotify Clone</h4>
                     <p>
@@ -170,27 +171,6 @@
                     <a href="https://github.com/im-rakesh0827"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-            <!-- <div class="project-box">
-                <img src="./img4.jpg" alt="">
-                <div class="project-layer">
-                    <h4>Employee Management System</h4>
-                    <p>
-                        Waiting....
-                    </p>
-                    <a href="https://github.com/im-rakesh0827"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div> -->
-
-            <!-- <div class="project-box">
-                <img src="./img4.jpg" alt="">
-                <div class="project-layer">
-                    <h4>Ticket Booking System</h4>
-                    <p>
-                        Waiting....
-                    </p>
-                    <a href="https://github.com/im-rakesh0827"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div> -->
         </div>
     </section>
 
@@ -213,13 +193,13 @@
     <!--<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>-->
     <script src="index.js"></script>
 
+
     <script src="https://topmate-embed.s3.ap-south-1.amazonaws.com/v1/topmate-embed.js"
-        user-profile="https://topmate.io/embed/profile/im_rakesh0827?theme=D5534D"
+        user-profile="https://topmate.io/embed/profile/im_rakesh0827?theme=E18C45"
         btn-style='{"backgroundColor":"#000","color":"#fff","border":"1px solid #000"}' embed-version="v1"
         button-text="Let's Connect" position-right="30px" position-bottom="30px" custom-padding="0px"
         custom-font-size="16px" custom-font-weight="500" custom-width="200px" async="" defer="">
         </script>
-
 
 
 </body>
