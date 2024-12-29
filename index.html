@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
@@ -20,6 +21,9 @@
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
+            <button id="theme-toggle" class="btn">
+                <i class="fas fa-adjust"></i>
+            </button>
         </nav>
     </header>
 
@@ -201,6 +205,70 @@
         custom-font-size="16px" custom-font-weight="500" custom-width="200px" async="" defer="">
         </script>
 
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const themeIcon = themeToggle.querySelector('i');
+
+        themeToggle.addEventListener('click', () => {
+            if (body.classList.contains('light-theme')) {
+                body.classList.remove('light-theme');
+                body.classList.add('dark-theme');
+                themeIcon.className = 'fas fa-moon'; // Update to moon icon
+            } else {
+                body.classList.remove('dark-theme');
+                body.classList.add('light-theme');
+                themeIcon.className = 'fas fa-sun'; // Update to sun icon
+            }
+            localStorage.setItem('theme', body.className);
+        });
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            body.className = savedTheme;
+            if (savedTheme === 'light-theme') {
+                themeIcon.className = 'fas fa-sun';
+            } else {
+                themeIcon.className = 'fas fa-moon';
+            }
+        }
+    </script>
+    <style>
+        .light-theme {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .dark-theme {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        .navbar .btn {
+            cursor: pointer;
+            padding: 5px 10px;
+            border: none;
+            background-color: #f0f0f0;
+            color: #333;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar .btn:hover {
+            background-color: #ddd;
+        }
+
+        #theme-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        #theme-toggle i {
+            font-size: 24px;
+            color: #ffcc00;
+        }
+    </style>
 
 </body>
 
