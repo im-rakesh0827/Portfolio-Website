@@ -247,78 +247,15 @@
             </div>
         </div>
     </section>
-
-
-
-    <!-- <section class="education-experience" id="education-experience">
-        <h2 class="heading">Education & <span>Experience</span></h2>
-        <div class="container">
-            <div class="education">
-                <h3>Education</h3>
-                <div class="progress">
-                    <h4>Bachelor of Technology (B.Tech)</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 90%;"></div>
-                    </div>
-                    <span>90%</span>
-                </div>
-                <div class="progress">
-                    <h4>Higher Secondary</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 85%;"></div>
-                    </div>
-                    <span>85%</span>
-                </div>
-                <div class="progress">
-                    <h4>Secondary Education</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 95%;"></div>
-                    </div>
-                    <span>95%</span>
-                </div>
-            </div>
-    
-            <div class="experience">
-                <h3>Experience</h3>
-                <div class="progress">
-                    <h4>Software Developer @ Kavayah IT Solutions</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 80%;"></div>
-                    </div>
-                    <span>2 Years</span>
-                </div>
-                <div class="progress">
-                    <h4>Intern @ Tech Solutions</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 60%;"></div>
-                    </div>
-                    <span>6 Months</span>
-                </div>
-                <div class="progress">
-                    <h4>Freelancer</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 70%;"></div>
-                    </div>
-                    <span>1 Year</span>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>-->
     <script src="index.js"></script>
-
-
     <script src="https://topmate-embed.s3.ap-south-1.amazonaws.com/v1/topmate-embed.js"
         user-profile="https://topmate.io/embed/profile/im_rakesh0827?theme=E18C45"
         btn-style='{"backgroundColor":"#000","color":"#fff","border":"1px solid #000"}' embed-version="v1"
         button-text="Let's Connect" position-right="30px" position-bottom="30px" custom-padding="0px"
         custom-font-size="16px" custom-font-weight="500" custom-width="200px" async="" defer="">
         </script>
-
-
     <script>
         const themeToggle = document.getElementById('theme-toggle');
         const body = document.body;
@@ -346,7 +283,85 @@
             }
         }
     </script>
-    
+
+
+    <style>
+        .education-experience {
+            padding: 50px;
+            /* background-color: #6f6c2a; */
+            background: var(--second-bg-color);
+            text-align: center;
+        }
+
+        .education-experience .heading {
+            font-size: 36px;
+            margin-bottom: 20px;
+            /* color: white; */
+            color: #ddddec;
+        }
+
+        .education-experience .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .education,
+        .experience {
+            width: 48%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .education h3,
+        .experience h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .progress {
+            margin-bottom: 20px;
+        }
+
+        .progress h4 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        .progress-bar {
+            background-color: #e0e0e0;
+            border-radius: 20px;
+            height: 10px;
+            overflow: hidden;
+            position: relative;
+            margin: 10px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(to right, #4caf50, #81c784);
+            border-radius: 20px;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .progress span {
+            font-size: 14px;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+
+            .education,
+            .experience {
+                width: 100%;
+            }
+        }
+    </style>
 
 </body>
 
