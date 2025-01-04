@@ -2,401 +2,397 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rakesh Kumar | Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBYB5MK388"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-EBYB5MK388');
+    </script>
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <button id="theme-toggle" class="btn">
-                <i class="fas fa-adjust"></i>
-            </button>
+    <!-- HEADER -->
+    <header id="header">
+        <div id="particles-js">
+            <nav id="nav" data-aos="fade-in">
+                <div class="container nav-container">
+                    <ul class="hide-for-mobile nav-links flex">
+                        <li>
+                            <a href="#projects" class="link"><i class="fas fa-code"></i> Projects</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="link"><i class="fas fa-tools"></i> Skills</a>
+                        </li>
+                        <li>
+                            <a href="#education" class="link"><i class="fas fa-user-graduate"></i> Education</a>
+                        </li>
+                        <li>
+                            <a href="#certifications" class="link"><i class="fas fa-shield-alt"></i> Certificates</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="link"><i class="fas fa-envelope"></i> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu hide-for-desktop">
+                    <div class="container">
+                        <div class="mobile-menu-links">
+                            <ul class="flex">
+                                <li>
+                                    <a href="#projects" class="link blue-hover">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="#skills" class="link blue-hover">Skills</a>
+                                </li>
+                                <li>
+                                    <a href="#education" class="link blue-hover">Education</a>
+                                </li>
+                                <li>
+                                    <a href="#certifications" class="link"> Certificates</a>
+                                </li>
+                                <li>
+                                    <a href="#contact" class="link blue-hover">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
         </nav>
+
+        <!-- HERO -->
+        <div class="hero">
+            <div data-aos="fade-up">
+                <h1 class="h1">
+
+                    Hi, I'm <span class="main-font text-blue">Rakesh Kumar</span>
+                </h1>
+                <p class="student" id="student">
+                    I'm currently working on cutting-edge projects for Weitz & Luxenberg (W&L), NY, as part of my role
+                    at <a href="https://kavayahsolutions.com" class="blue-link-underline" target="_blank">Kavayah IT
+                        Solutions
+                        Pvt Ltd</a>
+                    I am involved in developing and optimizing mission-critical applications like Estates, Liens, and
+                    WisNext, focusing on
+                    delivering high-performing, user-centric software solutions that enhance operational efficiency.
+
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-blue"><i class="fas fa-code"></i> Projects</a>
+                    <a href="https://github.com/im-rakesh0827" class="btn-blue-outline mx-1" id="projects-btn"
+                        target="_blank"><i class="fab fa-github"></i> Github</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SOCIAL LINKS -->
+        <div class="socials" data-aos="fade-in">
+            <ul>
+                <li class="bg-blue"><a href="https://www.linkedin.com/in/im-rakesh0827/" target="_blank"><span
+                            class="socials-text">LinkedIn</span> <i class="fab fa-linkedin fa-2x"></i></a></li>
+                <li class="bg-dark-grey"> <a href="https://github.com/im-rakesh0827" target="_blank"><span
+                            class="socials-text">GitHub</span><i class="fab fa-github fa-2x"></i></a>
+                </li>
+                <li class="bg-white"><a class="text-dark-grey" href="mailto:acousticrakesh0827@gmail.com"><span
+                            class="socials-text">Email</span><i class="fas fa-envelope fa-2x"></i></a></li>
+            </ul>
+        </div>
+        </div>
+
+        <div class="seperator-skew">
+            <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+
     </header>
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello , It's me</h3>
-            <h1>Rakesh Kumar</h1>
-            <h3>I'm a <span></span></h3>
-            <p>Software Developer(.NET) @Kavayah IT Solutions (Hyderabad, India)
-                <br>
-                <span style="font-style: italic;">Committed to Crafting Innovative Solutions.</span>
-            </p>
-            <div class="social-media">
-                <a href="https://github.com/im-rakesh0827" class="tooltip" target="_blank">
-                    <img src="images/github.png" alt="GitHub Icon" style="width: 30px; height: 30px;">
-                    <span class="tooltiptext">GitHub</span>
-                </a>
-
-                <a href="https://www.linkedin.com/in/im-rakesh0827/" class="tooltip" target="_blank">
-                    <img src="images/linkedin.png" alt="LinkedIn Icon" style="width: 30px; height: 30px;">
-                    <span class="tooltiptext">LinkedIn</span>
-                </a>
-
-                <a href="https://www.instagram.com/im_rakesh0827/" class="tooltip" target="_blank">
-                    <img src="images/instagram1.png" alt="Instagram Icon" style="width: 30px; height: 30px;">
-                    <span class="tooltiptext">Instagram</span>
-                </a>
-                <a href="https://medium.com/@im-rakesh0827" class="tooltip" target="_blank">
-                    <img src="images/medium.png" alt="Medium Icon" style="width: 30px; height: 30px;">
-                    <span class="tooltiptext">Medium</span>
-                </a>
-                <a href="https://fueler.io/im_rakesh0827" class="tooltip" target="_blank">
-                    <img src="images/global-network.png" alt="Fueler Icon" style="width: 30px; height: 30px;">
-                    <span class="tooltiptext">Fueler</span>
-                </a>
-                <a href="https://hashnode.com/@imrakesh0827" class="tooltip" target="_blank">
-                    <img src="images/network-2.png" alt="Hashnode Icon" style="width: 30px; height: 30px;">
-                    <span class="tooltiptext">Hashnode</span>
-                </a>
-                <a href="https://topmate.io/im_rakesh0827" class="tooltip" target="_blank">
-                    <img src="images/network.png" alt="Topmate Icon" style="width: 30px; height: 30px;">
-                    <span class="tooltiptext">Topmate</span>
-                </a>
-            </div>
-            <a href="https://docs.google.com/document/d/1NTVc--xidicPKJguxmb0lHOscecm6MLZ/edit?usp=sharing&ouid=103065912875687167013&rtpof=true&sd=true"
-                class="btn" target="_blank" download
-                style="display: inline-flex; align-items: center; text-decoration: none;">
-                <span style="font-size: 16px; color: inherit; vertical-align: middle;">Download CV</span>
-                <img src="images/download-2.png" alt="Download Icon"
-                    style="width: 30px; height: 30px; margin-left: 10px; vertical-align: middle;">
-            </a>
-        </div>
-        <div class="home-img">
-            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_touohxv0.json" background="transparent"
-                speed="0.5" style="width: 400px; height:400px; margin-left: 15em;" loop autoplay>
-            </lottie-player>
-        </div>
-    </section>
-    <section class="about" id="about">
-        <div class="about-img">
-            <img id="profileImage" src="images/img1.jpg" alt="" style="height: 600px; width: auto;">
-        </div>
-
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Software Developer | <a href="https://kavayahsolutions.com"><span>@Kavayah IT Solutions Pvt
-                        Ltd</span></a></h3>
-            <p style="font-size: 20px;">
-                As a dedicated .NET Software Developer, I am passionate about building robust, scalable, and
-                high-performing
-                applications that solve real-world problems with a strong foundation in C#, ASP.NET, and .NET Core, MVC.
-                <br>
-                Key Skills : C#, ASP.NET, ADO.NET, .NET Core, Blazor Framework, HTML, CSS, JavaScript, MSSQL Server,
-                Entity Framework, etc
-                <br>
-                Developing dynamic web applications, RESTFul APIs, and microservices.
-                I am always on the lookout for new challenges and opportunities to apply my skills in innovative ways.
-                <br />
-            </p>
-            <a href="#" class="btn">Read More</a>
-        </div>
-    </section>
-    <section class="skills" id="skills">
-        <h2 class="heading">My <span>Skills</span></h2>
-        <div class="skills-container">
-            <div class="skills-box">
-                <i class='bx bx-code'></i>
-                <h3>Languages & Framework</h3>
-                <ul>
-                    <li>C++, C# , Python</li>
-                    <li>HTML,CSS,JS</li>
-                    <li>.NET</li>
-                    <li>.NET Core</li>
-                    <li>REST API</li>
-                </ul>
-            </div>
-            <div class="skills-box">
-                <i class='bx bx-book'></i>
-                <h3>Other Libraries/Frameworks</h3>
-                <ul>
-                    <li>Blazor</li>
-                    <li>React</li>
-                    <br />
-                </ul>
-            </div>
-            <div class="skills-box">
-                <i class='bx bxs-edit-alt'></i>
-                <h3>Technologies and Tools</h3>
-                <ul>
-                    <li>Visual Studio</li>
-                    <li>VS Code </li>
-                    <li>MSSQL Server</li>
-                    <br />
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="projects" id="projects">
-        <h2 class="heading">My <span>Projects</span></h2>
-        <div class="project-container">
-            <div class="project-box">
-                <img src="images/img2.jpg" alt="">
-                <div class="project-layer">
-                    <h4>Book Management System</h4>
-                    <p>
-                        Waiting....
-                    </p>
-                    <a href="https://github.com/im-rakesh0827"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="project-box">
-                <img src="images/img6.jpg" alt="">
-                <div class="project-layer">
-                    <h4>Parking Booking System</h4>
-                    <p>
-                        Waiting....
-                    </p>
-                    <a href="https://github.com/im-rakesh0827"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="project-box">
-                <img src="images/img3.jpg" alt="">
-                <div class="project-layer">
-                    <h4>Music Application / Spotify Clone</h4>
-                    <p>
-                        Waiting....
-                    </p>
-                    <a href="https://github.com/im-rakesh0827"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-        <form id="contact-form">
-            <div class="input-box">
-                <input type="text" id="fullName" placeholder="Full Name" required>
-                <input type="email" id="email" placeholder="Email Address" required>
-            </div>
-            <div class="input-box">
-                <input type="number" id="mobileNumber" placeholder="Mobile Number" pattern="[0-9]*">
-                <input type="text" id="emailSubject" placeholder="Email Subject">
-            </div>
-            <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
-    </section>
-    <section class="education-experience" id="education-experience">
-        <h2 class="heading">Education & <span>Experience</span></h2>
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
         <div class="container">
-            <div class="education">
-                <h3>Education</h3>
-                <div class="progress">
-                    <h4>Bachelor of Technology (B.Tech)</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 90%;"></div>
-                    </div>
-                    <span>90%</span>
+            <h2 class="main-font">My<span class="text-blue main-font"> Projects</span></h2>
+            <div class="project-row" data-aos="fade-up">
+                <div class="project-left">
+                    <img src="img/Smart Learn Analytics.png" alt="">
                 </div>
-                <div class="progress">
-                    <h4>Higher Secondary</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 85%;"></div>
+                <div class="project-right">
+                    <h3>Online Voting System</h3>
+                    <ul class="tech-stack-list">
+                        <p class="text-grey"><b>Made with: </b></p>
+                        <li><i class="fab fa-html5"></i></li>
+                        <li><span class="iconify" data-icon="logos:javascript" data-inline="false"></span></li>
+                        <li><i class="fab fa-css3-alt"></i></li>
+                        <li><span class="iconify" data-icon="logos:bootstrap" data-inline="false"></span></li>
+                        <li><span class="iconify" data-icon="logos:java" data-inline="false"></span></li>
+                        <li><span class="iconify" data-icon="logos:mysql" data-inline="false"></span></li>
+                    </ul>
+                    <p>
+                        Online Voting System is a web-based application developed using Java, MySQL, HTML, CSS, and
+                        JavaScript. It allows users to vote for their favorite candidate online. The system is secure
+                        and
+                        easy to use.It also provides real-time results and analytics.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/im-rakesh0827" class="btn-blue-outline btn-small mx-1"
+                            target="_blank"> <i class="fab fa-github"></i>
+                            Code</a>
                     </div>
-                    <span>85%</span>
-                </div>
-                <div class="progress">
-                    <h4>Secondary Education</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 95%;"></div>
-                    </div>
-                    <span>95%</span>
-                </div>
-            </div>
-
-            <div class="experience">
-                <h3>Experience</h3>
-                <div class="progress">
-                    <h4>Software Developer @ Kavayah IT Solutions</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 80%;"></div>
-                    </div>
-                    <span>2 Years</span>
-                </div>
-                <div class="progress">
-                    <h4>Intern @ Tech Solutions</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 60%;"></div>
-                    </div>
-                    <span>6 Months</span>
-                </div>
-                <div class="progress">
-                    <h4>Freelancer</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 70%;"></div>
-                    </div>
-                    <span>1 Year</span>
                 </div>
             </div>
-        </div>
-    </section>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!--<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>-->
-    <script src="index.js"></script>
-    <script src="https://topmate-embed.s3.ap-south-1.amazonaws.com/v1/topmate-embed.js"
-        user-profile="https://topmate.io/embed/profile/im_rakesh0827?theme=E18C45"
-        btn-style='{"backgroundColor":"#000","color":"#fff","border":"1px solid #000"}' embed-version="v1"
-        button-text="Let's Connect" position-right="30px" position-bottom="30px" custom-padding="0px"
-        custom-font-size="16px" custom-font-weight="500" custom-width="200px" async="" defer="">
-        </script>
-    <script>
-        const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
-        const themeIcon = themeToggle.querySelector('i');
 
-        themeToggle.addEventListener('click', () => {
-            if (body.classList.contains('light-theme')) {
-                body.classList.remove('light-theme');
-                body.classList.add('dark-theme');
-                themeIcon.className = 'fas fa-moon'; // Update to moon icon
-            } else {
-                body.classList.remove('dark-theme');
-                body.classList.add('light-theme');
-                themeIcon.className = 'fas fa-sun'; // Update to sun icon
-            }
-            localStorage.setItem('theme', body.className);
-        });
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            body.className = savedTheme;
-            if (savedTheme === 'light-theme') {
-                themeIcon.className = 'fas fa-sun';
-            } else {
-                themeIcon.className = 'fas fa-moon';
-            }
-        }
-    </script>
+            <!-- SKILLS -->
+            <section id="skills" class="skills">
+                <div class="seperator-skew-top">
+                    <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+                    </svg>
+                </div>
+                <div class="container" data-aos="fade-in">
+                    <h2 class="text-white main-font">Technical <span class="text-blue main-font">Skills</span></h2>
+                    <ul class="skills-icons">
+                        <li><span class="iconify" data-icon="logos:python" data-inline="false" data-width="90px"
+                                data-height="90px"></span><span>Python</span></li>
+                        <li><span class="iconify" data-icon="logos:java" data-inline="false" data-width="90px"
+                                data-height="90px"></span><span>Java</span></li>
+                        <li><span class="iconify" data-icon="logos:mysql" data-inline="false" data-width="90px"
+                                data-height="90px"></span><span>MySQL</span></li>
+                        <li><span class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false"
+                                data-width="90px" data-height="90px"></span><span>HTML</span></li>
+                        <li><span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false"
+                                data-width="90px" data-height="90px"></span><span>CSS</span></li>
+                        <li><span class="iconify" data-icon="logos:javascript" data-inline="false" data-width="90px"
+                                data-height="90px"></span><span>JavaScript</span></li>
+                        <li><span class="iconify" data-icon="logos:bootstrap" data-inline="false" data-width="90px"
+                                data-height="90px"></span><span>Bootstrap</span></li>
+                        <li><span class="iconify" data-icon="logos:git-icon" data-inline="false" data-width="90px"
+                                data-height="90px"></span><span>Git</span></li>
+                    </ul>
+                </div>
 
+                <div class="seperator-skew-bottom">
+                    <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+                    </svg>
+                </div>
+            </section>
 
-    <style>
-        .light-theme {
-            background-color: #ffffff;
-            color: #000000;
-        }
+            <!-- Education -->
+            <section id="education" class="education">
+                <div class="container">
+                    <h2 class="main-font" data-aos="fade-in">My <span class="text-blue main-font">Education</span></h2>
 
-        .dark-theme {
-            background-color: #000000;
-            color: #ffffff;
-        }
+                    <div class="education-card" data-aos="zoom-in">
+                        <div class="education-card-column">
+                            <div class="card-column-image">
+                                <img src="img/gvp.png" alt="">
+                            </div>
 
-        .navbar .btn {
-            cursor: pointer;
-            padding: 5px 10px;
-            border: none;
-            background-color: #f0f0f0;
-            color: #333;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
+                            <div class="card-column-large">
+                                <!-- <h4 class="education-year">2022</h4> -->
+                                <h4>Sershah Engineering College, Sasaram (2018 - 2022)</h4>
+                                <p>CGPA: 7.57 / 10</p>
+                                <ul>
+                                    <li>Major in computer science</li>
+                                    <ul>
+                                        <li>Network Security</li>
+                                        <li>Computer Networks</li>
+                                        <li>Operating Systems</li>
+                                        <li>Data Structures & Algoritms</li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education-card" data-aos="zoom-in">
+                        <div class="education-card-column">
+                            <div class="card-column-image">
+                                <img src="img/tjc.png" alt="">
+                            </div>
 
-        .navbar .btn:hover {
-            background-color: #ddd;
-        }
+                            <div class="card-column-large">
+                                <h4>MLSM College, Darbhanaga (2015 - 2018)</h4>
+                                <p>55%</p>
+                                <ul>
+                                    <li>Intermediate</li>
+                                    <ul>
+                                        <li>Mathematics</li>
+                                        <li>Physics</li>
+                                        <li>Chemistry</li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education-card" data-aos="zoom-in">
+                        <div class="education-card-column">
+                            <div class="card-column-image">
+                                <img src="img/bem.png" alt="">
+                            </div>
 
-        #theme-toggle {
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
+                            <div class="card-column-large">
+                                <h4>Gyan Bharti Public School, Darbhanaga - (2011-2015)</h4>
+                                <p>CGPA: 8 / 10</p>
+                                <ul>
+                                    <li>High School</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="certifications">
+                <h2 class="main-font" data-aos="fade-in">My <span class="text-blue main-font">Certifications</span></h2>
+                <div class="certificate-container" data-aos="zoom-in">
+                    <div class="card"
+                        onclick="window.open('https://www.hackerrank.com/certificates/iframe/c8a0303f0122')"
+                        data-aos="zoom-in">
+                        <img src="#" alt="Badge 2" class="badge-img">
+                        <div class="badge-name">Problem Solving - HackerRank</div>
+                    </div>
 
-        #theme-toggle i {
-            font-size: 24px;
-            color: #ffcc00;
-        }
+                </div>
+            </section>
+            <!-- CONTACT -->
+            <section id="contact" class="contact">
+                <div class="container">
+                    <h2 class="section-title main-font" data-aos="fade-in">Contact <span
+                            class="text-blue main-font">Me</span></h2>
+                    <div class="card-container">
+                        <div class="card" data-aos="fade-in">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>acousticrakesh0827@gmail.com</p>
+                        </div>
+                        <div class="card" data-aos="fade-in" data-aos-delay="100">
+                            <i class="fab fa-github"></i>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/im-rakesh0827" class="text-blue"
+                                target="_blank">im-rakesh0827</a>
+                        </div>
+                        <div class="card" data-aos="fade-in" data-aos-delay="200">
+                            <i class="fab fa-linkedin"></i>
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/im-rakesh0827/" class="text-blue"
+                                target="_blank">im-rakesh0827</a>
+                        </div>
+                    </div>
 
-        .education-experience {
-            padding: 50px;
-            /* background-color: #6f6c2a; */
-            background: var(--second-bg-color);
-            text-align: center;
-        }
+                    <form id="contact-form" data-aos="zoom-in" data-aos-delay="300"
+                        action="https://formspree.io/f/mwkgnnqq" method="POST">
+                        <h2 class="main-font">Send <span class="text-blue main-font">Email</span></h2>
 
-        .education-experience .heading {
-            font-size: 36px;
-            margin-bottom: 20px;
-            /* color: white; */
-            color: #ddddec;
-        }
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                        </div>
 
-        .education-experience .container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                        </div>
 
-        .education,
-        .experience {
-            width: 48%;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+                        <div class="form-group">
+                            <textarea name="message" id="message" rows="7" placeholder="Message" required></textarea>
+                        </div>
 
-        .education h3,
-        .experience h3 {
-            font-size: 28px;
-            margin-bottom: 20px;
-            color: #444;
-        }
+                        <button type="submit" class="btn-email">
+                            <span class="default">Send</span>
+                            <span class="success">
+                                <svg viewBox="0 0 16 16">
+                                    <polyline points="3.75 9 7 12 13 5"></polyline>
+                                </svg>Sent
+                            </span>
+                            <svg class="trails" viewBox="0 0 33 64">
+                                <path d="M26,4 C28,13.3333333 29,22.6666667 29,32 C29,41.3333333 28,50.6666667 26,60">
+                                </path>
+                                <path d="M6,4 C8,13.3333333 9,22.6666667 9,32 C9,41.3333333 8,50.6666667 6,60"></path>
+                            </svg>
+                            <div class="plane">
+                                <div class="left"></div>
+                                <div class="right"></div>
+                            </div>
+                        </button>
+                        <div id="status"></div>
+                    </form>
+                </div>
+            </section>
 
-        .progress {
-            margin-bottom: 20px;
-        }
+            <footer id="footer" class="footer">
+                <div class="container">
+                    <div class="footer-flex">
+                        <!-- <img src="/img/logo.png" alt="logo" id="logo-footer"> -->
 
-        .progress h4 {
-            font-size: 18px;
-            margin-bottom: 5px;
-            color: #666;
-        }
+                        <div class="footer-icon-links">
+                            <a href="https://github.com/im-rakesh0827" target="_blank"><i
+                                    class="fab fa-github fa-2x"></i></a>
+                            <a href="https://www.linkedin.com/in/im-rakesh0827/" target="_blank"><i
+                                    class="fab fa-linkedin fa-2x"></i></a>
+                            <a href="mailto:acousticrakeshk0827@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
 
-        .progress-bar {
-            background-color: #e0e0e0;
-            border-radius: 20px;
-            height: 10px;
-            overflow: hidden;
-            position: relative;
-            margin: 10px 0;
-        }
+            <!-- Back to top button in corner -->
+            <a id="backToTopBtn" class="btn-blue">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+            <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+            <!-- jQuery -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(to right, #4caf50, #81c784);
-            border-radius: 20px;
-            transition: width 0.5s ease-in-out;
-        }
+            <!-- Particles.js for hero section -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
+                integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        .progress span {
-            font-size: 14px;
-            color: #777;
-        }
+            <!-- GSAP animations -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 
-        @media (max-width: 768px) {
+            <script>
+                particlesJS.load('particles-js', './particles.json', function () {
+                    console.log("particles.json loaded...")
+                })
 
-            .education,
-            .experience {
-                width: 100%;
-            }
-        }
-    </style>
+                particlesJS.load('skills', './particles.json', function () {
+                    console.log("particles.json loaded...")
+                })
+
+                particlesJS.load('footer', './particles.json', function () {
+                    console.log("particles.json loaded...")
+                })
+
+                particlesJS.load()
+            </script>
+
+            <script defer src="js/app.js"></script>
+
+            <!-- AOS Animations -->
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
 
 </body>
 
